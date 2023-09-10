@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add custom CSS styles for vibrant colors and styling */
+        body {
+            background-color: #f5f6f7;
+        }
+
+        .header {
+            background-color: #007BFF;  /* A vibrant blue color */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #0056b3;  /* A slightly darker blue to create a border effect */
+            margin-bottom: 20px;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  /* Soft shadow for card */
+        }
+
+    </style>
+    <title>AutoClaim AI: Your Smart Claim Decision Assistant</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>AutoClaim AI: Your Smart Claim Decision Assistant</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">Enter Accident Write-up</div>
+                    <div class="card-body">
+                        <form action="/submit" method="post">
+                            <div class="form-group">
+                                <label for="accident_report">Accident Report:</label>
+                                <textarea class="form-control" name="accident_report" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
